@@ -139,7 +139,7 @@ class Shortener(http.server.BaseHTTPRequestHandler):
 
             # 4. Serve a redirect to the root page (the form).
             #    Delete the following line.
-             self.send_response(303)
+            self.send_response(303)
             self.send_header('Location', '/')
             self.end_headers()
         else:
